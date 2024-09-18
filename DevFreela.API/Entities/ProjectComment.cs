@@ -1,8 +1,8 @@
 ﻿namespace DevFreela.API.Entities
 {
-    public class ProjectComent : BaseEntity
+    public class ProjectComment : BaseEntity
     {
-        public ProjectComent(string content, int idProject, int idUser)
+        public ProjectComment(string content, int idProject, int idUser)
             :base()
         {
             Content = content;
@@ -10,6 +10,7 @@
             IdUser = idUser;
         }
 
+        public int Id { get; private set; }
         public string Content { get; set; }
 
         public int IdProject { get; set; }

@@ -37,7 +37,7 @@ namespace DevFreela.API.Entities
 
         public ProjectStatusEnum Status { get; set; }
 
-        public List<ProjectComent> Comments { get; private set; }
+        public List<ProjectComment> Comments { get; private set; }
 
         public void Cancel()
         {

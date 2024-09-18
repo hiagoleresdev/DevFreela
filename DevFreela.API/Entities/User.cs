@@ -1,6 +1,6 @@
 ﻿namespace DevFreela.API.Entities
 {
-    public class User
+    public class User : BaseEntity
     {
         public User(string fullName, string email, DateTime birthDate)
             :base()
@@ -16,6 +16,7 @@
             Comments = [];
         }
 
+        public int Id { get; private set; }
         public string FullName { get; private set; }
         public string Email { get; private set; }
 
@@ -27,6 +28,6 @@
 
         public List<Project> OwnedProject { get; set; } 
         public List<Project> FreelanceProjects { get; set; } 
-        public List<ProjectComent> Comments { get; set; }
+        public List<ProjectComment> Comments { get; set; }
     }
 }

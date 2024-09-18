@@ -4,7 +4,7 @@ namespace DevFreela.API.Models
 {
     public class ProjectViewModel
     {
-        public ProjectViewModel(int id, string title, int idClient, int idFreelancer, string description, string clientName, string freelancerName, decimal totalCost, List<ProjectComent> comments)
+        public ProjectViewModel(int id, string title, int idClient, int idFreelancer, string description, string clientName, string freelancerName, decimal totalCost, List<ProjectComment> comments)
         {
             Id = id;
             Title = title;
